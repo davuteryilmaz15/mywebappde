@@ -10,6 +10,11 @@ app.get('/api/hello', async (req, res) => {
     res.send('Hello World')
 })
 
+app.get('/api/hello2', async (req, res) => {
+
+    res.send('Hello from World')
+})
+
 app.get('/api/env', async (req, res) => {
 
     const text = JSON.stringify(process.env)
